@@ -82,7 +82,7 @@ print("Pygame initialized:", pygame.get_init())
 print("Font module initialized:", pygame.font.get_init())
 
 # Create font object
-testfont = pygame.font.SysFont("mono", 18) 
+testfont = pygame.font.SysFont("SpaceNova-6Rpd1.otf", 30) 
 print("Font object created:", testfont)
 # Initialize game display
 GameDisplay = pygame.display.set_mode((1000, 750), pygame.RESIZABLE)
@@ -314,14 +314,14 @@ while True:
         GameDisplay.blit(TurnDisplay, (5, 350))
         GameDisplay.blit(PointsDisplay, (5, 400))
 
-        GameDisplay.blit(PollutionDisplay, (800, 200))
-        GameDisplay.blit(CarbonDisplay, (800, 250))
-        GameDisplay.blit(NitrogenDisplay, (800, 300))
-        GameDisplay.blit(PhosphorusDisplay, (800, 350))
-        GameDisplay.blit(CMultiplierDisplay, (775, 400))
-        GameDisplay.blit(NMultiplierDisplay, (775, 450))
-        GameDisplay.blit(PMultiplierDisplay, (775, 500))
-        GameDisplay.blit(FixationDisplay, (800, 150))
+        GameDisplay.blit(PollutionDisplay, (800, 150))
+        GameDisplay.blit(CarbonDisplay, (800, 200))
+        GameDisplay.blit(NitrogenDisplay, (800, 250))
+        GameDisplay.blit(PhosphorusDisplay, (800, 300))
+        GameDisplay.blit(CMultiplierDisplay, (775, 350))
+        GameDisplay.blit(NMultiplierDisplay, (775, 400))
+        GameDisplay.blit(PMultiplierDisplay, (775, 450))
+        GameDisplay.blit(FixationDisplay, (800, 100))
 
         NextLabel = testfont.render("Next", True, BLACK)
         for i, card in enumerate(Player1.Cards):
